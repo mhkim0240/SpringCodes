@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<web-app
+        version="2.5"
+        xmlns="htt://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <display-name>Springcodes-web</display-name>
+
+    <!--
+
+    <filter>
+        <filter-name>TeeFilter</filter-name>
+        <filter-class>ch.qos.logback.access.servlet.TeeFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>TeeFilter</filter-name>
+        <filter-name>Set Character Encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>loggingFilter</filter-name>
+        <filter-class>com.github.isrsal.logging.LoggingFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>loggingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    -->
+
+    <!-- parent spring bean xml
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath:conf/spring/applicationContext.xml
+        </param-value>
+    </context-param>
+     -->
+
+    <!-- application listener
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <filter>
+        <filter-name>httpMethodFilter</filter-name>
+        <filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>httpMethodFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>vem</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:conf/spring/dispatcher-servlet.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>vem</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+-->
+
+    <!-- 	<listener> -->
+    <!-- 	    <listener-class>com.asfs.ems.main.AppListener</listener-class> -->
+    <!-- 	</listener> -->
+
+
+    <!--
+    <session-config>
+        <tracking-mode>COOKIE</tracking-mode>
+        <session-timeout>3000</session-timeout>
+        <cookie-config>
+            <name>JSESSIONID_EM</name>
+        </cookie-config>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+-->
+
+</web-app>
