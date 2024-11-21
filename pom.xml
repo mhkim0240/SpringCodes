@@ -23,6 +23,46 @@
         <java.version>11</java.version>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>local</id>
+            <properties>
+                <environment>local</environment>
+            </properties>
+
+        </profile>
+
+        <profile>
+            <id>dev</id>
+            <!-- 기본 Profile 설정 -->
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <environment>dev</environment>
+            </properties>
+
+        </profile>
+
+        <profile>
+            <id>staging</id>
+            <properties>
+                <environment>staging</environment>
+            </properties>
+        </profile>
+
+
+        <profile>
+            <id>live</id>
+            <properties>
+                <environment>live</environment>
+            </properties>
+        </profile>
+    </profiles>
+
+
+
+
     <dependencies>
 
         <!--
