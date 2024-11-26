@@ -47,7 +47,9 @@ public class SwaggerConfig {
                 //.apis(RequestHandlerSelectors.basePackage("com.kjh.study.api"))
                 .apis(RequestHandlerSelectors.basePackage("com.leo.codes.api"))
                 .paths(PathSelectors.any())
-                .build();
+                .build()
+                .pathMapping("/");
+
                 //.pathMapping("/codes-0.0.1-SNAPSHOT/");
     }
 
